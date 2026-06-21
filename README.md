@@ -56,7 +56,7 @@ File utama instalasi tersedia di dalam direktori `/Output/`. File **`ZoyAI_Setup
 1. **Unduh Installer:** Masuk ke folder `Output` di repository ini dan unduh file `ZoyAI_Setup.exe`. Atau agar lebih mudah, unduh langsung melalui website resmi kami di [zoyai.my.id](https://zoyai.my.id/#download).
 2. **Jalankan Instalasi:** Klik dua kali pada file `.exe`. Sistem instalasi akan mengurus pengaturan lingkungan kerja, injeksi dependensi lokal, dan membuat startup *services*.
 3. **Panggil Asisten:** Setelah ZoyAI aktif, Anda bisa memanggil *ZoyAI Control Center* kapan saja dari mana saja dengan menekan kombinasi keyboard: 
-   > <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd>
+   > <kbd>F8</kbd> (atau bisa Anda ubah di pengaturan)
 4. **Mulai Perintah AI:** Cukup ketik perintah seperti biasa:
    - *"Zoy, matikan volume PC sekarang."*
    - *"Tolong rangkum pesan WA dari bos saya."*
