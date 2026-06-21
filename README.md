@@ -16,6 +16,8 @@
 
 Mulai dari mengatur volume, merangkum chat WhatsApp, memutar musik Spotify, memantau konsumsi RAM, hingga berevolusi dan **menulis kode skill-nya sendiri**, ZoyAI akan menjadi co-pilot sejati produktivitas Anda.
 
+> 🇮🇩 **Catatan Penting:** Untuk saat ini, keseluruhan engine AI dan pemrosesan bahasa ZoyAI hanya dikhususkan untuk **Bahasa Indonesia**. Dukungan multi-bahasa akan hadir pada pembaruan mendatang.
+
 ---
 
 ## ✨ Fitur Utama (Core Modules)
@@ -33,6 +35,15 @@ Mulai dari mengatur volume, merangkum chat WhatsApp, memutar musik Spotify, mema
 🎵 **Spotify Remote Engine**
 - Cari lagu, putar *playlist*, atur antrean, dan kendalikan pemutaran Spotify langsung via instruksi suara atau teks.
 
+🗣️ **Neural Voice Speech & Streaming (Edge-TTS)**
+- Pilihan karakter suara asisten yang realistis (pria/wanita) berbasis teknologi Azure Neural TTS.
+- Sintesis audio real-time berbasis *chunked-streaming* generator, menghasilkan suara respon lisan instan bebas delay.
+
+🤖 **Dual-Engine AI (Cloud & Local Mode)**
+- **Cloud Mode (Google Gemini):** Pemrosesan cepat dan cerdas menggunakan API Google Gemini (Gemini 2.5 Flash & Pro) yang dikonfigurasi secara mandiri (BYOK).
+- **Local Mode (Ollama):** Pemrosesan perintah 100% offline dan privat di komputer Anda menggunakan model AI lokal seperti `qwen2.5-coder` atau `llama3`.
+- **Ollama Automation Helper:** Dilengkapi fitur pengunduhan & instalasi otomatis installer Ollama Setup, serta pendeteksi auto-start server di latar belakang saat ZoyAI dijalankan.
+
 ⚡ **Active Process & AFK Tracker**
 - ZoyAI memantau pemakaian memori dari setiap proses Windows. Mematikan aplikasi yang mengalami *not responding* dalam hitungan detik. 
 - Auto-shutdown saat mendeteksi Anda AFK (Away From Keyboard) dalam waktu yang lama.
@@ -47,13 +58,13 @@ Mulai dari mengatur volume, merangkum chat WhatsApp, memutar musik Spotify, mema
 Repositori ini sengaja **hanya difokuskan pada file *installer* (build release)** untuk mendistribusikan aplikasi ke pengguna, sekaligus melindungi *source code* inti dari versi premium ZoyAI. ZoyAI dibangun dengan arsitektur Python lokal yang di-*compile* menjadi satu paket mandiri agar memudahkan pengguna.
 
 ### Lokasi File Installer:
-File utama instalasi tersedia di dalam direktori `/Output/`. File **`ZoyAI_Setup.exe`** adalah file yang Anda butuhkan untuk memasang ZoyAI di PC/Laptop Anda secara otomatis.
+File utama instalasi **`ZoyAI_Setup.exe`** tersedia di halaman **Releases** repositori GitHub ini untuk memudahkan pengunduhan versi stabil terbaru.
 
 ---
 
 ## 💻 Cara Instalasi & Penggunaan
 
-1. **Unduh Installer:** Masuk ke folder `Output` di repository ini dan unduh file `ZoyAI_Setup.exe`. Atau agar lebih mudah, unduh langsung melalui website resmi kami di [zoyai.my.id](https://zoyai.my.id/#download).
+1. **Unduh Installer:** Masuk ke bagian **Releases** pada repositori ini dan unduh file `ZoyAI_Setup.exe`. Atau agar lebih mudah, unduh langsung melalui website resmi kami di [zoyai.my.id](https://zoyai.my.id/#download).
 2. **Jalankan Instalasi:** Klik dua kali pada file `.exe`. Sistem instalasi akan mengurus pengaturan lingkungan kerja, injeksi dependensi lokal, dan membuat startup *services*.
 3. **Panggil Asisten:** Setelah ZoyAI aktif, Anda bisa memanggil *ZoyAI Control Center* kapan saja dari mana saja dengan menekan kombinasi keyboard: 
    > <kbd>F8</kbd> (atau bisa Anda ubah di pengaturan)
